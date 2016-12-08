@@ -7,7 +7,7 @@ TARGET      = simple-player
 TEMPLATE    = app
 CONFIG 	   += c++11
 
-QT         += widgets
+QT         += widgets webenginewidgets
 
 SOURCES    += main.cpp \
     SimplePlayer.cpp \

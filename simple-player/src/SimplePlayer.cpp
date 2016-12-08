@@ -23,6 +23,7 @@ SimplePlayer::SimplePlayer(QWidget *parent)
       _equalizerDialog(new EqualizerDialog(this))
 {
     ui->setupUi(this);
+    //ui->browser->load(QUrl::fromUserInput("qt.io"));
 
     _instance = new VlcInstance(VlcCommon::args(), this);
     _player = new VlcMediaPlayer(_instance);

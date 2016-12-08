@@ -14,7 +14,7 @@
    <string>Demo Player</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QGridLayout" name="gridLayout_2">
+   <layout class="QGridLayout" name="gridLayout_2" rowstretch="0,1,0,0,0,1">
     <item row="0" column="0">
      <widget class="QPushButton" name="openLocal">
       <property name="text">
@@ -75,6 +75,9 @@
        <string>Equalizer</string>
       </property>
      </widget>
+    </item>
+    <item row="5" column="0" colspan="2">
+     <widget class="QWebEngineView" name="browser" native="true"/>
     </item>
    </layout>
   </widget>
@@ -162,6 +165,12 @@
    <class>VlcWidgetSeek</class>
    <extends>QWidget</extends>
    <header location="global">VLCQtWidgets/WidgetSeek.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QWebEngineView</class>
+   <extends>QWidget</extends>
+   <header location="global">QWebEngineView</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
